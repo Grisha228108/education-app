@@ -1,0 +1,117 @@
+body {
+    overflow-x: hidden;
+}
+
+
+/* Само уведомление (основа) */
+.notification {
+    padding: 15px 25px;
+    border-radius: 12px;
+
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px); /* Эффект матового стекла */
+    text-align: center;
+    width: 300px;
+    
+    right: -400px;
+    bottom: 20px;
+    pointer-events: none;
+    font-size: 18px;
+    position: fixed;
+    z-index: 9999;
+
+    transition: right 0.5s cubic-bezier(0.34, 1.1, 0.64, 1); 
+}
+
+.test-animation {
+    right: 20px;
+}
+
+.notification_success {
+    background: rgba(0, 255, 128, 0.15);
+    border-color: rgba(0, 255, 128, 0.6);
+    box-shadow: 0 0 25px rgba(0, 255, 128, 0.2), inset 0 0 15px rgba(0, 255, 128, 0.05);
+}
+
+.notification_success::before {
+    content: "✔ ";
+    color: #00ff80;
+    text-shadow: 0 0 15px #00ff80;
+    font-weight: bold;
+}
+
+.notification_error {
+    background: rgba(255, 40, 40, 0.25);
+    border-color: rgba(255, 60, 60, 0.6);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2), inset 0 0 15px rgba(255, 0, 0, 0.1);
+}
+.notification_error::before {
+    content: "✖ ";
+    color: #ff4444;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff4444;
+}
+
+.notification_warning {
+    background: rgba(255, 200, 0, 0.2);
+    border-color: rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2), inset 0 0 15px rgba(255, 215, 0, 0.1);
+}
+.notification_warning::before {
+    content: "⚠ ";
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+
+.title {
+    font-size: 26px;
+    color: white;
+}
+
+.centered {
+    text-align: center;
+}
+
+.title_big {
+    font-size: 34px;
+}
+
+.descr {
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+.descr_big {
+    font-size: 28px;
+}
+
+.bg-gray {
+    background-color: #3f3f3f49;
+}
+
+.green {
+    color: #00e6b4;
+    text-shadow: 0 0 15px #00e6b4;
+    font-weight: bold;
+}
+.orange {
+    color: #ffa500;
+    text-shadow: 0 0 15px #ffa500;
+    font-weight: bold;
+}
+.red {
+    color: #ff4444;
+    text-shadow: 0 0 15px #ff4444;
+    font-weight: bold;
+}
+
+.percent_block {
+    display: flex;
+    margin: 30px;
+    gap: 10px;
+}

@@ -1,0 +1,328 @@
+body {
+    background-image: url(../img/фон.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(203, 255, 245);
+}
+
+.practice-title {
+    text-align: center;
+    font-size: 50px;
+    color: aqua;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.practice-container {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.sidebar {
+    background-image: url(../img/__-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    border: 8px double #1384f6;
+    border-radius: 20px;
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    color: aqua;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(127, 200, 255);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(102, 194, 255);
+    border-radius: 8px;
+    transition: width 2s ease;
+}
+
+.progress-text {
+    font-size: 18px;
+    text-align: right;
+    color: rgb(143, 255, 218);
+}
+
+.nav-title {
+    font-size: 24px;
+    color: aqua;
+    margin: 30px 0 15px;
+    font-family: "Jura", sans-serif;
+}
+
+.topic-list {
+    list-style: none;
+}
+
+.topic-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(102, 194, 255, 0.2);
+    border-radius: 8px;
+    border-left: 3px solid rgb(127, 200, 255);
+}
+
+.topic-link {
+    text-decoration: none;
+    color: rgb(143, 255, 218);
+    font-size: 18px;
+    display: block;
+}
+
+.topic-link:hover {
+    color: rgb(220, 239, 255);
+}
+
+.task-block {
+    margin-left: 280px;
+}
+
+.task-header {
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: rgba(102, 194, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.task-number {
+    color: rgb(203, 255, 245);
+    margin-right: 20px;
+}
+
+.task-level {
+    color: rgb(143, 255, 218);
+    border: 1px solid rgb(127, 200, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.task-card {
+    background-image: url(../img/magnific_0p3xPYFTfW.png);
+    background-repeat: no-repeat;
+    background-size: 142% 123%;
+    background-position: -206px;
+
+    padding: 30px;
+    border: 4px solid rgb(127, 200, 255);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.task-question {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 700;
+}
+
+.answers {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 20px;
+    background: #1a3a8a; 
+    border-radius: 12px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Каждый вариант ответа */
+.answer-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.answer-info:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.answer-info input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4a8aff; /* синий цвет для чекбокса */
+    transform: scale(1.1);
+}
+
+.answer-text {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.answer-info:has(input:checked) {
+    background: rgba(74, 138, 255, 0.4);
+    border-color: #4a8aff;
+    box-shadow: 0 0 15px rgba(74, 138, 255, 0.2);
+}
+
+
+.buttons {
+    text-align: right;
+}
+
+.btn {
+    background-color: rgb(102, 194, 255);
+    border: 4px solid rgb(141, 255, 255);
+    border-radius: 16px;
+    padding: 15px 25px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+    font-family: "Tektur", sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px 5px rgb(10, 247, 255);
+}
+
+.hint {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(102, 194, 255, 0.3);
+    border: 2px solid rgb(127, 200, 255);
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.result {
+    background-color: rgba(102, 194, 255, 0.3);
+    padding: 30px;
+    border: 4px solid rgb(127, 200, 255);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.result-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(143, 255, 218);
+}
+
+.hidden {
+    display: none;
+}
+
+.bottom-nav {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 2px solid rgb(127, 200, 255);
+    border-bottom: 2px solid rgb(127, 200, 255);
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(143, 255, 218);
+    font-size: 22px;
+    font-family: "Tektur", sans-serif;
+    padding: 10px 20px;
+    background-color: rgba(102, 194, 255, 0.2);
+    border: 2px solid rgb(127, 200, 255);
+    border-radius: 10px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    box-shadow: 0px 0px 10px 5px rgb(10, 247, 255);
+    color: rgb(220, 239, 255);
+}
+
+.page-counter {
+    font-size: 20px;
+    color: aqua;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+/* Стили для контейнера со списком результатов */
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Стили для одной строчки с вопросом */
+.review-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* Левая часть (номер + вопрос) */
+.review-question {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1; /* Заставляет текст занимать всё свободное место */
+}
+.review-number {
+    font-weight: bold;
+    color: #888;
+    min-width: 30px;
+}
+.review-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; /* Если текст длинный, он обрежется ... */
+}
+
+/* Правая часть (иконка + Верно/Неверно) */
+.review-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+.status-correct {
+    color: #00e6b4;
+}
+.status-wrong {
+    color: #ff4444;
+}

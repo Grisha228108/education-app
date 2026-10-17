@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/practice.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Science+Gothic:wght@400;700&family=Tektur:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="practice-title">Практика</h1>
+    
+    <div class="practice-container">
+        <div class="sidebar">
+            <h2 class="sidebar-title">Прогресс</h2>
+            <div class="progress-block">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="progress-text"></p>
+            </div>
+            
+            <!-- <h3 class="nav-title">Темы</h3>
+            <ul class="topic-list">
+                <li class="topic-item">
+                    <a href="#" class="topic-link">Натуральные числа</a>
+                </li>
+                <li class="topic-item">
+                    <a href="#" class="topic-link">Целые числа</a>
+                </li>
+                <li class="topic-item">
+                    <a href="#" class="topic-link">Рациональные числа</a>
+                </li>
+            </ul> -->
+        </div>
+        <div class="task-block">
+            <div class="task-header">
+                <span class="task-number"></span>
+                <span class="task-level"></span>
+            </div>
+            
+            <div class="task-card">
+                <p class="task-question"></p>
+                
+                <div class="answers">
+                    <!-- <div class="answer-info">
+                        <input type="checkbox" id="1">
+                        <span class="answer-text">-5</span>
+                    </div>
+                    
+                    
+                    <span class="answer-text">0</span>
+                    <span class="answer-text">7</span>
+                    <span class="answer-text">2.5</span> -->
+                </div>
+
+                <!-- <div class="hint">
+                </div>    -->
+
+                <div class="buttons">
+                    <!-- <button class="btn hint-btn">Подсказка</button> -->
+                </div>
+
+            </div>
+
+            <div class="result hidden">
+                <button class="btn next-btn">Дальше</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <button class="nav-link" id="prev-question">← Назад</button>
+        <span class="page-counter">4/10</span>
+        <button class="nav-link" id="next-question">Вперёд →</button>
+    </div>
+
+    <script type="module" src="js/practice.js"></script>
+</body>
+</html>

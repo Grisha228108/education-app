@@ -1,0 +1,65 @@
+body {
+    background-image: url(../img/фон.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 150px;
+    color: rgb(203, 255, 245);
+    word-spacing: 1px;
+    line-height: 1.3
+}
+
+h1 {
+    margin-left: -150px;
+    padding: 35px 0;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-image: url(../img/circuit-board-blue-technology-background-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom:4px solid cadetblue;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 10px;
+    background-image: url(../img/5ac769ab-9a44-4a40-9625-60810921765f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    margin-top: 100px;
+    border-end-start-radius: 20px;
+    border-bottom: 5px solid darkcyan;
+    border-top: 1px solid rgb(0, 139, 137);
+    border-left: 1px solid rgb(0, 139, 137);
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: rgb(0, 49, 83) 2px 2px 2px, rgb(0, 255, 255) 1.2px 1px 2px;
+}
+
+p {
+    font-size: 25px;
+    margin: 20px 25px;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    text-shadow: rgb(0, 255, 255) 1.2px 1px 1px, rgb(0, 255, 255) 1.2px 1px 10px;
+}
+
+li {
+    list-style-position:inside;
+    list-style-type: circle;
+    margin: 10px;
+    
+}
+
+.img {
+    border-radius: 30px;
+    width: 200px;
+}
+

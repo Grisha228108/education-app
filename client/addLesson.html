@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/addLesson.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jura:wght@300..700&family=Rubik+Glitch&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="lesson-form">
+        <label for="lesson-select" class="lesson-label">Введите предмет:</label>
+        <select class="lesson-select" name="lessons-select" id="lessons-select">
+            <option value="math">Математика</option>
+            <option value="info">Информатика</option>
+            <option value="physics">Физика</option>
+        </select>
+
+        
+        <div class="lesson-wrapper">
+            <div class="wrapper">
+                <label for="theory" class="">Теория</label>
+                <input type="radio" name="lesson-type" id="theory">
+            </div>
+            <div class="wrapper">
+                <label for="practice" class="">Практика</label>
+                <input type="radio" name="lesson-type" id="practice">
+            </div>
+        </div>
+        <label for="lesson-name" class="lesson-label">Введите название урока</label>
+        <input type="text" name="lesson-name" id="lesson-name" class="lesson-text-input">
+
+        <label for="lesson-descr" class="lesson-label">Введите описание урока</label>
+        <input type="text" name="lesson-descr" id="lesson-descr" class="lesson-text-input">
+
+        <button class="lesson-btn" type="button">Подтвердить</button>
+    </form>
+    <script src="/js/addLesson.js"></script>
+</body>
+</html>

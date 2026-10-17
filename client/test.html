@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="langName" placeholder="Название языка" required>
+        <input type="text" name="langDate" placeholder="год выхода" required>
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <form class="get-lang">
+        <input type="text" name="langName" placeholder="Название языка" required>
+        <button type="submit">Получить</button>
+    </form>
+    
+
+    <form id="users-items">
+        <input type="text" name="name" required>
+        <!-- <input type="number" name="pass" required> -->
+        <input type="submit" value="Отправить">
+    </form>
+
+    <form id="write-form">
+        <input type="text" name="text" placeholder="Введите текст" required>
+        <button type="submit">Записать в файл</button>
+    </form>
+
+    <form id="users-validate">
+        <input type="text" name="name" placeholder="Введите name" required>
+        <input type="text" name="email" placeholder="Введите email" required>
+        <button type="submit">Записать в файл</button>
+    </form>
+    
+    <form id="task-form">
+        <input type="text" name="titleTask" placeholder="Введите title">
+        <input type="text" name="completed" placeholder="Введите completed">
+        <input type="number" name="taskId" placeholder="Введите id" required>
+        <button type="submit">Записать в файл</button>
+    </form>
+
+    <script src="js/client.js"></script>
+</body>
+</html>

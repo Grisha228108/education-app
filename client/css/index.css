@@ -1,0 +1,70 @@
+.app-title {
+    text-align: center;
+    background-color: rgb(60, 138, 255);
+    margin: 60px 120px;
+    font-size: 70px;
+    border: 30px;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    padding: 50px;
+    color: #d3fbff;
+    border-style: inset;
+    border-width: 10px;
+    border-color: rgba(61, 116, 255, 0.6);
+    background: rgba(60, 138, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* для Safari */
+    border-radius: 16px;
+}
+
+.app-list {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* .app-title:hover {
+
+} */
+
+a {
+    display: block;
+    text-decoration: none;
+    margin: 0 300px;
+    margin-bottom: 40px;
+    background-color: rgb(102, 194, 255);
+    padding: 20px;
+    border-style: outset;
+    border-color: rgb(141, 255, 255);
+    border-width: 4px 7px;
+    border-radius: 16px;
+    transition: border-radius 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border-width 0.5s ease-in-out;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(0, 51, 255);
+    opacity: 0.7;
+}
+
+a:hover {
+    box-shadow: -4px -4px 10px 1px rgb(10, 247, 255);
+    backdrop-filter: blur(10px);
+    border-radius: 80px;
+    opacity: 1;
+    border-width: 0px 10px 6px 0px;
+    border-color: rgb(0, 217, 255);
+    width: 1100px; 
+    margin: 0 150px;  
+    margin-bottom: 40px; 
+}
+
+
+
+
+body {
+    background-image: url(../img/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
