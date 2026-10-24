@@ -1,4 +1,4 @@
-const subjectsList = document.querySelector("#lessons-select")
+const subjectsList = document.getElementById("lessons-select")
 function createOptions(subjects) {
 
     subjects.forEach(element => {
