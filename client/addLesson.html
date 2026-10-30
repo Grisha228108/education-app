@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/addLesson.css">
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/theory.css">
+    <link rel="stylesheet" href="/css/addLesson.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jura:wght@300..700&family=Rubik+Glitch&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
@@ -33,7 +35,17 @@
         <label for="lesson-descr" class="lesson-label">Введите описание урока</label>
         <input type="text" name="lesson-descr" id="lesson-descr" class="lesson-text-input">
 
-        <button class="lesson-btn" type="button">Подтвердить</button>
+        <div class="preview-developments">
+        </div>
+
+        <div class="list-auxiliary-btn">
+            <button class="auxil-btn" id="headline" type="button">Добавить заголовок</button>
+            <button class="auxil-btn" id="paragraph" type="button">Добавить абзац</button>
+            <button class="auxil-btn" id="image" type="button">Добавить картинку</button>
+            <button class="auxil-btn" id="list" type="button">Добавить список</button>
+        </div>
+        
+        <button class="lesson-btn" id="5" type="button">Подтвердить</button>
     </form>
     <script src="/js/addLesson.js"></script>
 </body>

@@ -19,3 +19,12 @@ async function fetchSubjects() {
 }
 
 fetchSubjects()
+
+function previewSite() {
+    const previewDiv = document.querySelector(".preview-developments")
+
+}
+
+function addHeadline() {
+    
+}

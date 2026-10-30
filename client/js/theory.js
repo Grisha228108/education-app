@@ -42,11 +42,13 @@ function renderLesson(lessonBlocks) {
             case "title":
                 const title = document.createElement("h2");
                 title.textContent = block.content;
+                title.className = "subheadings"
                 item.appendChild(title)
                 break
             case "paragraph":
                 const text = document.createElement("p");
                 text.textContent = block.content;
+                text.className = "paragraph"
                 item.appendChild(text)
 
                 break
@@ -63,6 +65,7 @@ function renderLesson(lessonBlocks) {
                 if (block.content != null) {
                     const textBeforeUl = document.createElement("p");
                     textBeforeUl.textContent = block.content;
+                    textBeforeUl.className = "paragraph"
                     item.appendChild(textBeforeUl)
                 }
                 fetchLessonBlocksItems(block.id, item)
@@ -84,9 +87,11 @@ async function fetchLessonBlocksItems(block_id, item) {
     const ul = document.createElement("ul")
     sortLessonBlocksItems.forEach((item) => {
         const li = document.createElement("li")
+        li.className = "element-ul"
         const text = document.createElement("p")
         text.style.display = "inline"
         text.textContent = item.text;
+        text.className = "paragraph"
         li.appendChild(text)
         ul.appendChild(li)
     })

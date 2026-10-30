@@ -23,7 +23,7 @@ h1 {
     border-bottom:4px solid cadetblue;
 }
 
-h2 {
+.subheadings {
     font-size: 40px;
     padding: 10px;
     background-image: url(../img/5ac769ab-9a44-4a40-9625-60810921765f.jpg);
@@ -42,7 +42,7 @@ h2 {
     text-shadow: rgb(0, 49, 83) 2px 2px 2px, rgb(0, 255, 255) 1.2px 1px 2px;
 }
 
-p {
+.paragraph {
     font-size: 25px;
     margin: 20px 25px;
     font-family: "Jura", sans-serif;
@@ -51,7 +51,7 @@ p {
     text-shadow: rgb(0, 255, 255) 1.2px 1px 1px, rgb(0, 255, 255) 1.2px 1px 10px;
 }
 
-li {
+.element-ul {
     list-style-position:inside;
     list-style-type: circle;
     margin: 10px;
