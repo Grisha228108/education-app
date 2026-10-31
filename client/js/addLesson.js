@@ -1,6 +1,7 @@
 import { addSubheading } from './createLesson/theory/addSubheading.js';
 import { addParagraph } from './createLesson/theory/addParagraph.js';
 import { addList } from './createLesson/theory/createList.js';
+import { addImage } from './createLesson/theory/addImage.js';
 
 
 const subjectsList = document.getElementById("lessons-select")
@@ -30,10 +31,12 @@ function previewSite() {
     const buttonHeadline = document.getElementById("headline")
     const buttonParagraph = document.getElementById("paragraph")
     const buttonList = document.getElementById("list")
+    const buttonImage = document.getElementById("image")
 
     buttonHeadline.addEventListener("click", () => addSubheading(previewDiv))
     buttonParagraph.addEventListener("click", () => addParagraph(previewDiv))
     buttonList.addEventListener("click", () => addList(previewDiv))
+    buttonImage.addEventListener("click", () => addImage(previewDiv))
 }
 
 previewSite()
