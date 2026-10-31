@@ -42,7 +42,7 @@ function renderLesson(lessonBlocks) {
             case "title":
                 const title = document.createElement("h2");
                 title.textContent = block.content;
-                title.className = "subheadings"
+                title.className = "subheading"
                 item.appendChild(title)
                 break
             case "paragraph":

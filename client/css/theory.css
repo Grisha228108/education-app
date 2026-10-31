@@ -1,6 +1,5 @@
 body {
     background-image: url(../img/фон.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     margin-left: 150px;
     color: rgb(203, 255, 245);
@@ -23,7 +22,8 @@ h1 {
     border-bottom:4px solid cadetblue;
 }
 
-.subheadings {
+.subheading {
+    color: rgb(203, 255, 245);
     font-size: 40px;
     padding: 10px;
     background-image: url(../img/5ac769ab-9a44-4a40-9625-60810921765f.jpg);
@@ -40,22 +40,30 @@ h1 {
     font-weight: 400;
     font-style: normal;
     text-shadow: rgb(0, 49, 83) 2px 2px 2px, rgb(0, 255, 255) 1.2px 1px 2px;
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .paragraph {
+    background-color: transparent;
+    background-image: none;   
     font-size: 25px;
     margin: 20px 25px;
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
+    color: rgb(203, 255, 245);
     text-shadow: rgb(0, 255, 255) 1.2px 1px 1px, rgb(0, 255, 255) 1.2px 1px 10px;
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .element-ul {
     list-style-position:inside;
     list-style-type: circle;
     margin: 10px;
-    
 }
 
 .img {
