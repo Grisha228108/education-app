@@ -7,6 +7,7 @@ export function addImage(parent) {
     const image = showPreview(event);
     parent.appendChild(image);
     input.remove();
+    // Удалить input
   });
 
   parent.appendChild(input);
