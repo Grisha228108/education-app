@@ -143,6 +143,11 @@ body {
     transition: box-shadow 0.3s ease-in-out;
 }
 
+.subheading_create {
+    margin-left: 150px;
+    height: 1.95em;
+}
+
 .auxil-btn:hover,
 .lesson-btn:hover {
     background-color: rgb(80, 170, 230);
