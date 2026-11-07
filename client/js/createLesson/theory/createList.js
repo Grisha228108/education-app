@@ -10,6 +10,7 @@ function addList(preview) {
     };
 
     const wrapper = document.createElement('div');
+    wrapper.className = 'list-wrapper';
 
     const ul = document.createElement("ul")
     const nameList = document.createElement("textarea")
@@ -32,7 +33,7 @@ function addList(preview) {
     wrapper.appendChild(addElementButton);
 
     preview.appendChild(wrapper);
-    createSaveLogo(ul, "ul", wrapper)
+    createSaveLogo(ul, "ul", wrapper);
 };
 
 function createElementList(ul, preview) {
