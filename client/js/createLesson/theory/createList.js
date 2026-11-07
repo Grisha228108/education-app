@@ -32,10 +32,7 @@ function addList(preview) {
     wrapper.appendChild(addElementButton);
 
     preview.appendChild(wrapper);
-    for (let i = 0; i < ul.children.length; i++) {
-        console.log(ul.children[i].firstElementChild)
-        createSaveLogo(ul.children[i].firstElementChild, "li", ul);
-    }
+    createSaveLogo(ul, "ul", wrapper)
 };
 
 function createElementList(ul, preview) {
