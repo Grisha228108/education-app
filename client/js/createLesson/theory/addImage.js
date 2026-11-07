@@ -1,16 +1,22 @@
 export function addImage(parent) {
-  const input = document.createElement('input');
-  input.type = 'file';
-  input.accept = 'image/*';
+  const check_btn_save = document.querySelector(".save-btn")
 
-  input.addEventListener('change', (event) => {
-    const image = showPreview(event);
-    parent.appendChild(image);
-    input.remove();
-    // Удалить input
-  });
+  if (check_btn_save == null) {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
 
-  parent.appendChild(input);
+    input.addEventListener('change', (event) => {
+      const image = showPreview(event);
+      parent.appendChild(image);
+      input.remove();
+      // Удалить input
+    });
+
+    parent.appendChild(input);
+    return
+  }
+  alert("Заполните предыдущее поле")
 };
 
 function showPreview(event) {

@@ -1,35 +1,21 @@
 import { resize } from './resize.js';
+import { createSaveLogo } from './saveProgress.js';
 
 function addSubheading(preview) {
-    const wrapper = document.createElement('div');
-    const btn = document.createElement('button');
+  const check_btn_save = document.querySelector(".save-btn")
 
-    btn.textContent = 'Сохранить';
-
-    // При нажатии на кнопку сохранить, удаляется поле ввода и кнопка, на их месте появляется заголовок
-    btn.addEventListener('click', () => {
-      if (headLine.value.length !== 0) {
-        const heading = document.createElement('h2');
-        heading.textContent = headLine.value;
-        headLine.remove();
-        btn.remove();
-        wrapper.appendChild(heading);
-        return;
-      };
-
-      alert('Введите текст заголовка!');
-    });
+  if (check_btn_save == null) {
 
     const headLine = document.createElement("textarea")
     headLine.className = "subheading subheading_create"
     headLine.placeholder = "Введите заголовок"
-    headLine.style.width = preview.offsetWidth-150 + "px"
+    headLine.style.width = preview.offsetWidth-250 + "px"
     headLine.addEventListener("input", () => resize(headLine))
 
-    wrapper.appendChild(headLine);
-    wrapper.appendChild(btn);
-
-    preview.appendChild(wrapper);
+    createSaveLogo(headLine, "h2", preview)
+    return
+  }
+    alert("Заполните предыдущее поле")
 }
 
 export { addSubheading };
