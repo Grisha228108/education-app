@@ -1,4 +1,5 @@
 import { resize } from './resize.js';
+import { createSaveLogo } from './saveProgress.js';
 
 function addList(preview) {
     const check_btn_save = document.querySelector(".save-btn");
@@ -31,8 +32,10 @@ function addList(preview) {
     wrapper.appendChild(addElementButton);
 
     preview.appendChild(wrapper);
-
-    createSaveLogo(ul, "ul", wrapper);
+    for (let i = 0; i < ul.children.length; i++) {
+        console.log(ul.children[i].firstElementChild)
+        createSaveLogo(ul.children[i].firstElementChild, "li", ul);
+    }
 };
 
 function createElementList(ul, preview) {
