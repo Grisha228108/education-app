@@ -1,52 +1,54 @@
 import { resize } from './resize.js';
 
 function addList(preview) {
-    const check_btn_save = document.querySelector(".save-btn")
+    const check_btn_save = document.querySelector(".save-btn");
 
-    if (check_btn_save == null) {
-        const ul = document.createElement("ul")
-        const nameList = document.createElement("textarea")
-        const liButton = document.createElement("li")
-        liButton.className = "element-ul"
-        const addElementButton = document.createElement("button")
+    if (check_btn_save !== null) {
+        alert("Заполните предыдущее поле");
+        return;
+    };
 
-        addElementButton.className = "auxil-btn"
-        addElementButton.id = "elementList"
-        addElementButton.type = "button"
-        addElementButton.textContent = "Добавить новый элемент"
-        addElementButton.addEventListener("click", () => createElementList(ul, preview))
+    const wrapper = document.createElement('div');
 
-        createElementList(ul, preview)
+    const ul = document.createElement("ul")
+    const nameList = document.createElement("textarea")
+    
+    const addElementButton = document.createElement("button")
+    addElementButton.className = "auxil-btn"
+    addElementButton.id = "elementList"
+    addElementButton.type = "button"
+    addElementButton.textContent = "Добавить новый элемент"
+    addElementButton.addEventListener("click", () => createElementList(ul, preview));
 
-        nameList.className = "paragraph paragraph_create"
-        nameList.placeholder = "Введите название списка"
-        nameList.style.width = preview.offsetWidth-300 + "px"
-        nameList.addEventListener("input", () => resize(nameList))
+    createElementList(ul, preview);
 
-        preview.appendChild(nameList)
-        liButton.appendChild(addElementButton)
-        ul.appendChild(liButton)
-        preview.appendChild(ul)
-        createSaveLogo(ul, "ul", preview)
-        return
-    }
-    alert("Заполните предыдущее поле")
-}
+    nameList.className = "paragraph paragraph_create";
+    nameList.placeholder = "Введите название списка";
+    nameList.style.width = preview.offsetWidth-300 + "px";
+    nameList.addEventListener("input", () => resize(nameList));
+
+    wrapper.appendChild(ul);
+    wrapper.appendChild(addElementButton);
+
+    preview.appendChild(wrapper);
+
+    createSaveLogo(ul, "ul", wrapper);
+};
 
 function createElementList(ul, preview) {
-    const li = document.createElement("li")
+    const li = document.createElement("li");
 
-    li.className = "element-ul"
+    li.className = "element-ul";
 
-    const paragraph = document.createElement("textarea")
+    const paragraph = document.createElement("textarea");
 
-    paragraph.className = "paragraph paragraph_create"
-    paragraph.placeholder = "Введите элемент списка"
-    paragraph.style.width = preview.offsetWidth-325 + "px"
+    paragraph.className = "paragraph paragraph_create";
+    paragraph.placeholder = "Введите элемент списка";
+    paragraph.style.width = preview.offsetWidth-325 + "px";
+    paragraph.addEventListener("input", () => resize(paragraph));
 
-    paragraph.addEventListener("input", () => resize(paragraph))
-    li.appendChild(paragraph)
-    ul.insertBefore(li, ul.lastElementChild)
+    li.appendChild(paragraph);
+    ul.appendChild(li);
 }
 
 export { addList };

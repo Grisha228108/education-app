@@ -8,12 +8,12 @@ export function createSaveLogo(element, tag, preview) {
     // При нажатии на кнопку сохранить, удаляется поле ввода и кнопка, на их месте появляется заголовок
     btn.addEventListener('click', () => {
       if (element.value.length != 0) {
-        const heading = document.createElement(tag);
-        heading.textContent = element.value;
-        heading.className = element.className
+        const newEl = document.createElement(tag);
+        newEl.textContent = element.value;
+        newEl.className = element.className
         element.remove();
         btn.remove();
-        wrapper.appendChild(heading);
+        wrapper.appendChild(newEl);
         return;
       };
 
